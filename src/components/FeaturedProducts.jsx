@@ -38,13 +38,18 @@ const products = [
 
 const FeaturedProducts = () => {
   return (
-    <section className=" mt-12 flex flex-col items-center justify-center ">
-            <h2 className="text-center text-xl font-semibold text-gray-700 ">Featured Products</h2>
-      {
-        products.map((product) => (
-          <ProductCard key={product.title} title={product.title} imgSrc={product.imageSr} category={product.category} />
-        ))
-            }
+    <section className="flex flex-col items-center mx-5">
+      <h2 className="text-center text-xl font-semibold text-gray-700">Featured Products</h2>
+      <div className='grid grid-cols-1 sm:flex sm:flex-wrap sm:grid-cols-2 justify-start items-center sm:justify-start  gap-5 mt-5'>
+        {
+          products.map(product => (
+            <div className="w-72 h-72 ">
+              <ProductCard key={product.title} title={product.title} imgSrc={product.imageSr} category={product.category} />
+            </div>
+          )
+          )
+        }
+      </div>
     </section>
   )
 }
