@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom'
 
 const NavItem = ({link}) => {
   return (
-    <li key={link.path} className={`${!link.alwaysShow ? 'hidden sm:block' : 'block'} font-medium text-lg md:text-xl xl:text-2xl hover:border-b-2 border-spacing-1 border-amber-500`}>
+    <li key={link.path} className={`${!link.alwaysShow ? 'hidden sm:block' : 'block'} font-medium text-md xl:text-lg hover:border-b-2 border-spacing-1 border-amber-500`}>
     <NavLink  className={({ isActive}) =>
       isActive ? "text-amber-500" : "text-gray-500"
         }
