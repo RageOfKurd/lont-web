@@ -5,7 +5,7 @@ import offer from '../assets/15-off.png'
 
 const AdSection = () => {
   return (
-    <section className="mx-5 mt-5 sm:max-w-4xl lg:mx-auto">
+    <section className="mx-5 mt-5 sm:max-w-md md:max-w-xl lg:max-w-2xl xl:max-w-3xl sm:mx-auto">
     <Carousel
       transition={{ duration: 0.5 }}
       navButtonsAlwaysVisible={true}
