@@ -5,38 +5,41 @@ import ProductsGrid from '../components/ProductsGrid';
 
 const ProductsPage = () => {
   return (
-    <div className="mt-5">
-          
-          {/* filters */}
-          <div className="flex gap-1 ">
-        <div className="w-40 scale-75">
-        <Select size="md" label="Category">
+    <main className="mt-5 w-full ">
+         
+      <div className="grid grid-cols-2">
+      
+        <div className='ml-2 scale-90'>
+        <Select size="md" label="Category" >
                       {categories.map((category, index) => (
                           <Option key={index} value={category}>
                               {category}
                           </Option>
                         ))}
          </Select>
-                </div>
-              
-        <div className="w-40 scale-75">
-        <Select size="md" label="Zone">
+     </div>
+     
+        
+     <div className='mr-2 scale-90'>
+        <Select size="md" label="Zone" >
                       {zones.map((zone, index) => (
                           <Option key={index} value={zone}>
                               {zone}
                           </Option>
                         ))}
-                  </Select>
-          </div>
+         </Select>
+     </div>
+      
+      </div>    
 
-            </div>
-
-          {/* products Grid*/}
-
-         <ProductsGrid/>
-             
-    </div>
+      <ProductsGrid />
+     
+     
+      
+    </main>
   )
 }
 
 export default ProductsPage
+
+
