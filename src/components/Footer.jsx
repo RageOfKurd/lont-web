@@ -5,11 +5,14 @@ import Bnchina from './Bnchina'
 
 const Footer = () => {
   return (
-    <footer className="py-10 bg-gray-900 mt-10 px-5 ">
-          {/* logo */}
-        <img src={lontLogo} alt="" className='w-24 sm:w-20 lg:w-24'/>
+    <footer className=" sm:flex sm:justify-between sm:items-start sm:px-10 py-10 bg-gray-900 mt-10 px-5 ">
+          
+     <div>
+     <div>
+      <img src={lontLogo} alt="" className='w-24 sm:w-20 lg:w-24'/>
+      </div>
           {/* Lont Comp */}
-          <section>
+              <section>
               <h3 className="text-gray-300 font-semibold text-lg mt-5">Lont Company</h3> 
               <ul className="flex flex-col">
                   <li className="text-gray-500 text-sm mt-2">0770 123 4567</li>
@@ -45,6 +48,9 @@ const Footer = () => {
         
         </section>
           {/* Zones */}
+         
+         </div>
+          {/* copyrights */}
           <section>
               <h3 className="text-gray-300 font-semibold text-lg mt-5">Zones</h3> 
               <ul className="flex flex-col">
@@ -57,21 +63,22 @@ const Footer = () => {
                   </li>
                   
               </ul>
-        
         </section>
-         </div>
-          {/* copyrights */}
-          <p className="text-gray-500 text-sm mt-10 text-center">
-              © 2021 Lont Company. All rights reserved.
-          </p>
-          <div className="flex items-center justify-center mt-5 gap-2">
-          <p className="text-gray-500 text-sm  text-center">
-              developed by 
-              </p>
-                <Bnchina />
-          </div>
-          
+     </div>
+ 
+  <div>
+  <p className="text-gray-500 text-sm mt-10 text-center">
+© 2021 Lont Company. All rights reserved.
+</p>
+<div className="flex items-center justify-center mt-5 gap-2">
+<p className="text-gray-500 text-sm  text-center">
+developed by 
+</p>
+  <Bnchina />
+</div>
+ </div>
     </footer>
+
   )
 }
 

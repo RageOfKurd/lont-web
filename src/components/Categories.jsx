@@ -18,10 +18,10 @@ const Categories = () => {
       }, []);
   
     return (
-        <section className=" mt-12 sm:max-w-4xl lg:mx-auto">
-            <h2 className="text-center text-xl font-semibold text-gray-700 ">Categories</h2>
+        <section className=" mt-12 md:mt-20  sm:mx-auto flex flex-col">
+            <h2 className="text-center md:self-start md:ml-10 text-xl md:text-2xl font-semibold text-gray-700 ">Categories</h2>
              <div ref={emblaRef}>
-      <div className=" flex  md:gap-10 lg:gap-12 w-full h-full my-8">
+      <div className=" flex  w-full h-full my-14">
         {products.map((category) => (
             <CategoryItem key={category.id} title={category.title} imgSrc={category.imgSrc} />
         ))}

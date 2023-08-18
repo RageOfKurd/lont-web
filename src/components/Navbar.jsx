@@ -13,7 +13,7 @@ const navlinks = [
 const Navbar = () => {
   return (
     <nav className=' flex justify-between items-center px-4 py-8'>
-      <img src={logo} alt="logo" className="w-16" />
+      <img src={logo} alt="logo" className="w-16 sm:w-20 lg:w-24" />
       <div className="flex items-center space-x-8">
       <ul className='flex space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-10 xl:space-x-11 items-center justify-center  '>
               {navlinks.map((link) => (
